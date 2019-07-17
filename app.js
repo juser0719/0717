@@ -32,4 +32,8 @@ router.get('/image', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/Park/image.html'));
 });
 
+router.get('/Buttons', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/Park/Buttons.html'));
+});
+
 app.use('/', router);
