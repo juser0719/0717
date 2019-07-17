@@ -7,3 +7,5 @@
 
 중요 반응형 앱으로 움직인다
 메인화면 캐롤러스 3화면이 스크롤되도록한다.
+
+fas fa-shopping-cart fa-stack-1x fa-inverse

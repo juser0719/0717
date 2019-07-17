@@ -48,4 +48,8 @@ router.get('/Carousel', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/Park/Carousel.html'));
 });
 
+router.get('/index', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/Park/Project/index.html'));
+});
+
 app.use('/', router);
