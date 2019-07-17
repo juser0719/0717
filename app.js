@@ -36,4 +36,16 @@ router.get('/Buttons', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/Park/Buttons.html'));
 });
 
+router.get('/Buttons2', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/Park/Buttons2.html'));
+});
+
+router.get('/Collapse', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/Park/Collapse.html'));
+});
+
+router.get('/Carousel', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/Park/Carousel.html'));
+});
+
 app.use('/', router);
