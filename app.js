@@ -13,5 +13,8 @@ router.get('/Typography', function (req, res) {
 res.sendFile(path.join(__dirname + '/views/Park/Typography.html'));
 //__dirname : It will resolve to your project folder.
 });
+router.get('/Typography2', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/Park/Typography2.html'));
+});
 
 app.use('/', router);
