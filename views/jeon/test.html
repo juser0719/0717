@@ -1,0 +1,203 @@
+<!DOCTYPE html><!--HTML5-->
+<meta charset="UTF-8"><!--인코딩-->
+<html>
+    <head>
+        <!--js-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!--CSS-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+   </head>
+
+    <body>
+     <!--   <div class="btn-group dropright">
+            <button type="button" class="btn btn-secondary dropdown-toggle"
+                data-toggle="dropdown">
+                Dropdown
+            </button>
+            <div class="dropdown-menu">
+                <button class="dropdown-item">Action01</button>
+                <a class="dropdown-item" href="#">Another action01</a>
+                <a class="dropdown-item active" href="#">Something else here01</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item disabled" href="#">Separated link01</a>
+            </div>
+          
+        </div>
+        <div class="btn-group dropdown">
+            <button type="button" class="btn btn-secondary dropdown-toggle ml-1"
+                data-toggle="dropdown">
+                 Dropdown2
+            </button>
+            <div class ="dropdown-menu">
+                    <button class="dropdown-item">Action01</button>
+                    <button class="dropdown-item">Action02</button>
+                    <button class="dropdown-item">Action03</button>
+                    <button class="dropdown-item">Action04</button>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-md bg-light navbar-primary fixed-top row ">
+
+            <a class="navbar-brand ml-3" href="#">Logo</a>
+            <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 3</a>
+                    </li>       
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 6</a>
+                    </li>
+
+            </ul>
+        </nav>-->  
+      <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Logo</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav low">
+                    
+                    <a class="nav-item nav-link" href="#">Link1</a>
+                    <a class="nav-item nav-link" href="#">Link2</a>
+                    <a class="nav-item nav-link" href="#">Link3</a>
+                    <a class="nav-item nav-link" href="#">Link4</a>
+                    <a class="nav-item nav-link" href="#">Link5</a>
+
+                  </div>
+                </div>
+        </nav>--> 
+        <form action="/info" method ="GET">
+            <div class="form-group">
+                <label for= "emailId"><strong>Email address</strong></label>
+                <input type="email" class="form-control col" name="email">
+            </div>
+        <!--email-->            
+            <div class="form-group">
+                <label for= "pwd"><strong>Password</strong></label>
+                <input type="password" class="form-control col" name="password">
+            </div>
+        <!--password-->
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" name="remember">
+                <label class="form-check-label" for="check1">
+                    Remember me.
+                </label>
+            </div>
+            <button type="submit" class=" btn btn-primary mb-5">submit</button>
+        </form>
+        <form action="/info2" method ="GET">
+                <div class="form-group">
+                    <label for="sel1"><strong>Selected list (select one):</strong></label>
+                        <select class="form-control col"name="list">
+                            <option value="l-1">1</option>
+                            <option value="l-2">2</option>
+                            <option value="l-3">3</option>
+                            <option value="l-4">4</option>
+                        </select>
+                </div>
+                <div class="form-group">
+                    <label for="sellot"><h5>Multiple select list(hold ctrl or shift (or drag with the mouse)to select more than one )</h5></label>
+                    <div>
+                        <select multiple class="form-control" name="list2" >
+                            <option value="ll-1">1</option>
+                            <option value="ll-2">2</option>
+                            <option value="ll-3">3</option>
+                            <option value="ll-4">4</option>
+                            <option value="ll-5">5</option>
+                            <option value="ll-6">6</option>
+                            <option value="ll-7">7</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class=" btn btn-primary mb-5">submit</button>
+        </form>
+        <form action="/info3" method ="GET">
+
+            <div class="form-group input-group ">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" >ID</span>
+                </div>
+                <input type="text" class="form-control" name="id" placeholder="Email">
+            </div>
+            <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" >PW</span>
+                    </div>
+                    <input type="text" class="form-control" name="pw" placeholder="Password">
+            </div>
+
+            <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" >TEXT</span>
+                    </div>
+                    <input type="text" class="form-control" name="text" placeholder="Text">
+            </div>
+            <button type="submit" class=" btn btn-primary mb-5">submit</button> 
+            </div>
+        </form>
+
+        <form>
+                <div class="col-md-6 mb-6">
+                        <label for="validationServer01">First name</label>
+                        <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" value="Jeon" required>
+                        <div class="valid-feedback">
+                          Good!
+                        </div>
+                </div>
+                <div class="col-md-6 mb-6">
+                        <label for="validationServer03">City</label>
+                        <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="Seoul" required>
+                        <div class="invalid-feedback">
+                          Wrong!
+                </div>  
+        </form>
+
+      <!--  <div class="row">
+            <div class="card text-center col-lg-4 md-4 sm-4 ">
+                <h5 class="card-header"> Featured </h5>
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a ... content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card-footer text-muted "> 2 days ago </div>
+            </div>
+            <div class="card text-center col-lg-4 md-4 sm-4">
+                    <h5 class="card-header"> Featured </h5>
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a ... content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <div class="card-footer text-muted"> 2 days ago </div>
+            </div>
+            <div class="card text-center col-lg-4 md-4 sm-4">
+                    <h5 class="card-header"> Featured </h5>
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a ... content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <div class="card-footer text-muted"> 2 days ago </div>
+            </div>
+        </div>
+-->
+
+    </body>
+</html>
