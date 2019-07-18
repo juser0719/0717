@@ -48,5 +48,25 @@ router.get('/info3', function (req, res) {
 
 });
 
+
 app.use('/', router);
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+
+
+router.get('/Buttons2', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/Park/Buttons2.html'));
+});
+
+router.get('/Collapse', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/Park/Collapse.html'));
+});
+
+router.get('/Carousel', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/Park/Carousel.html'));
+});
+
+router.get('/index', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/Park/Project/index.html'));
+});
+
+app.use('/', router);
+
